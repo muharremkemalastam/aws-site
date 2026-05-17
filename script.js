@@ -1,1 +1,3 @@
-console.log("AWS Site Loaded Successfully");
+function showMessage() {
+  alert("Welcome to Kemal's Developer Journey!");
+}
