@@ -71,3 +71,20 @@ button:hover {
 .nav-links a:hover {
   color: #10b981;
 }
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.6;
+  color: #555;
+}
