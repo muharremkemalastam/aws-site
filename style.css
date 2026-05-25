@@ -223,3 +223,34 @@ header p {
     align-items: center;
   }
 }
+.projects {
+  padding: 60px 20px;
+  text-align: center;
+  background: #eef2ff;
+}
+
+.projects h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 25px;
+  width: 260px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 24px rgba(0,0,0,0.2);
+}
