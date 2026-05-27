@@ -254,3 +254,44 @@ header p {
   transform: translateY(-10px);
   box-shadow: 0 14px 24px rgba(0,0,0,0.2);
 }
+.dark-btn {
+  background: #111827;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dark-btn:hover {
+  background: #10b981;
+}
+
+.dark-mode {
+  background: #111827;
+  color: white;
+}
+
+.dark-mode .card,
+.dark-mode .project-card,
+.dark-mode .about,
+.dark-mode .skills {
+  background: #1f2937;
+  color: white;
+}
+
+.dark-mode .skill {
+  background: #374151;
+}
+.dark-mode .projects,
+.dark-mode .about,
+.dark-mode .skills {
+  color: white;
+}
+
+.dark-mode p,
+.dark-mode h2,
+.dark-mode h3 {
+  color: white;
+}
