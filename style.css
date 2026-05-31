@@ -295,3 +295,57 @@ header p {
 .dark-mode h3 {
   color: white;
 }
+.footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  display: inline-block;
+  background: #10b981;
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
+.dark-mode .contact {
+  background: #1f2937;
+  color: white;
+}
