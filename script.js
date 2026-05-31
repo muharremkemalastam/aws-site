@@ -8,3 +8,5 @@ function toggleMenu() {
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
+document.getElementById("year").textContent =
+  new Date().getFullYear();
