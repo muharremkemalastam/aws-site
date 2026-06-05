@@ -395,3 +395,12 @@ header p {
 .project-meta {
   margin-top: 10px;
 }
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card {
+  width: 260px;
+}
