@@ -460,3 +460,18 @@ button:active,
   border-radius: 8px;
   font-size: 12px;
 }
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  color: white;
+  font-size: 32px;
+  margin: 0 12px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #10b981;
+  transform: scale(1.2);
+}
