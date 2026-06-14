@@ -485,3 +485,19 @@ button:active,
   align-items: center;
   gap: 15px;
 }
+.project-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+}
+.project-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
