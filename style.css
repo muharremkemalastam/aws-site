@@ -508,3 +508,8 @@ button:active,
   margin-top: 20px;
   flex-wrap: wrap;
 }
+.hero-buttons .contact-btn,
+.hero-buttons button {
+  min-width: 220px;
+  text-align: center;
+}
