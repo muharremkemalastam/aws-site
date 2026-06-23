@@ -513,3 +513,10 @@ button:active,
   min-width: 220px;
   text-align: center;
 }
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
