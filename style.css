@@ -520,3 +520,49 @@ button:active,
   flex-wrap: wrap;
   margin-top: 25px;
 }
+/* =========================
+   CURRENT FOCUS
+========================= */
+
+.focus{
+  background:#f8fafc;
+  padding:70px 20px;
+  text-align:center;
+}
+
+.focus-container{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:25px;
+  margin-top:40px;
+}
+
+.focus-card{
+  width:300px;
+  background:white;
+  border-radius:16px;
+  padding:30px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.focus-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+.focus-card i{
+  font-size:40px;
+  color:#10b981;
+  margin-bottom:15px;
+}
+
+.focus-card h3{
+  margin-bottom:12px;
+}
+
+.focus-card p{
+  color:#555;
+  line-height:1.6;
+}
