@@ -566,3 +566,50 @@ button:active,
   color:#555;
   line-height:1.6;
 }
+/* =========================
+   FEATURED PROJECT
+========================= */
+
+.featured{
+  padding:70px 20px;
+  background:#0f172a;
+  color:white;
+  text-align:center;
+}
+
+.featured h2{
+  margin-bottom:40px;
+  font-size:32px;
+}
+
+.featured-card{
+  max-width:900px;
+  margin:auto;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:40px;
+  backdrop-filter: blur(10px);
+}
+
+.featured-content p{
+  line-height:1.6;
+  margin-bottom:15px;
+  color:#e5e7eb;
+}
+
+.tags{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:20px 0;
+}
+
+.tags span{
+  background:#10b981;
+  color:white;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
+}
