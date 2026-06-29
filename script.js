@@ -1,29 +1,47 @@
-function showMessage() {
-  alert("Welcome to Kemal's Developer Journey!");
-}
 function toggleMenu() {
   const menu = document.getElementById("navLinks");
   menu.classList.toggle("active");
 }
+
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
-document.getElementById("year").textContent =
-  new Date().getFullYear();
-  const elements = document.querySelectorAll('.fade-in');
 
-const observer = new IntersectionObserver(entries => {
+// fade-in observer
+const elements = document.querySelectorAll(".fade-in");
+
+const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
+    entry.target.classList.toggle("show", entry.isIntersecting);
   });
 }, {
   threshold: 0.1
 });
 
 elements.forEach(el => observer.observe(el));
-window.addEventListener("scroll", () => {
+
+// modal
+function openModal(title, text) {
+  document.getElementById("projectModal").style.display = "block";
+  document.getElementById("modalTitle").innerText = title;
+  document.getElementById("modalText").innerText = text;
+}
+
+function closeModal() {
+  document.getElementById("projectModal").style.display = "none";
+}
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
+});
+
+// scroll optimization
+let ticking = false;
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+function handleScroll() {
   const navbar = document.querySelector(".navbar");
 
   if (window.scrollY > 10) {
@@ -31,17 +49,11 @@ window.addEventListener("scroll", () => {
   } else {
     navbar.classList.remove("scrolled");
   }
-});
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-links a");
 
-window.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-
-    if (scrollY >= sectionTop - 100) {
+    if (window.scrollY >= section.offsetTop - 100) {
       current = section.getAttribute("id");
     }
   });
@@ -52,4 +64,14 @@ window.addEventListener("scroll", () => {
       link.classList.add("active");
     }
   });
+}
+
+window.addEventListener("scroll", () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      handleScroll();
+      ticking = false;
+    });
+    ticking = true;
+  }
 });

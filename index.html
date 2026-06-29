@@ -12,6 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <meta name="description" content="Frontend Developer portfolio - HTML, CSS, JavaScript, Linux and Cloud projects by Kemal Astam">
+  <meta name="keywords" content="frontend developer, portfolio, html css javascript, stockholm developer">
+  <meta name="author" content="Kemal Astam">
 </head>
 
 <body>
@@ -105,7 +109,7 @@
 
       <p>
         A multilingual digital research platform uncovering Ottoman–Swedish relations and historical European–Islamic interactions through archival documents and academic sources.
-       </p>
+      </p>
 
       <p>
         The project aims to uncover unknown archival documents, translate historical sources,
@@ -167,7 +171,11 @@ Showcases projects, skills and professional profile.
      class="project-btn">
      🐙 GitHub Repo
   </a>
+  <button onclick="openModal('Portfolio Website', 'This is my main portfolio project.')">
+  Details
+</button>
 </div>
+
 
 <div class="project-card">
 
@@ -304,7 +312,7 @@ I enjoy learning through real-world projects and continuously improving my techn
 </section>
 
 
-<section class="stats">
+<section class="stats fade-in">
 
   <div class="stat-box">
     <h2>4+</h2>
@@ -346,6 +354,10 @@ I enjoy learning through real-world projects and continuously improving my techn
   View CV
 </a>
 
+<a href="cv.pdf" download class="contact-btn">
+  Download CV (PDF)
+</a>
+
 </section>
 
   <footer class="footer">
@@ -367,6 +379,14 @@ I enjoy learning through real-world projects and continuously improving my techn
 </footer>
 
  <script src="script.js"></script>
+
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+  </div>
+</div>
 
 </body>
 </html>
