@@ -2,9 +2,6 @@
    BASE
 ========================= */
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   margin: 0;
@@ -21,8 +18,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background: #111827;
   padding: 20px 40px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  transition: all 0.3s ease;
+  will-change: background, box-shadow;
 }
 
 .logo {
@@ -405,7 +410,6 @@ html {
 .card,
 .project-card {
   will-change: transform;
-  transition: all 0.3s ease;
 }
 .card:hover,
 .project-card:hover {
@@ -494,20 +498,7 @@ button:active,
   background: white;
   padding: 5px;
 }
-.project-logo {
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
+
 .hero-buttons .contact-btn,
 .hero-buttons button {
   min-width: 220px;
@@ -716,13 +707,6 @@ button:active,
   opacity: 1;
   transform: translateY(0);
 }
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: all 0.3s ease;
-  will-change: background, box-shadow;
-}
 
 .navbar.scrolled {
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -735,17 +719,25 @@ button:active,
   color: #10b981;
   border-bottom: 2px solid #10b981;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 .project-card {
-  transition: all 0.3s ease;
-  transform-style: preserve-3d;
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,.08);
+  overflow: hidden;
+  position: relative;
+  transition: all .35s ease;
+  text-align: left;
 }
+
 
 .project-card:hover {
   transform: translateY(-10px) scale(1.03) rotateX(2deg);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.15);
 }
+
 @media (max-width: 768px) {
   .timeline-container::before {
     left: 20px;
